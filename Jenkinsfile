@@ -3,18 +3,15 @@ pipeline {
         // set a timeout of 60 minutes for this pipeline
         timeout(time: 60, unit: 'MINUTES')
     }
-    agent {
-      node {
-        label 'maven'
-      }
-    }
+    agent any 
+        tools {maven "Maven"}
 
     environment {
         //TODO: Customize these variables for your environment
-		DEV_PROJECT = "bookstore-dev"
-        STAGE_PROJECT = "bookstore-stage"
-        APP_GIT_URL = "https://github.com/galaxy78-openshift-pipeline/movies"
-        NEXUS_SERVER = "https://nexus-cicd.dte-ocp46-zb9b4f-915b3b336cabec458a7c7ec2aa7c625f-0000.us-east.containers.appdomain.cloud/repository/maven-public"
+		DEV_PROJECT = "project-dev"
+        STAGE_PROJECT = "project-stage"
+        APP_GIT_URL = "https://github.com/Omar-Openshift/java1"
+        NEXUS_SERVER = "https://nexus-project-devops.dte-ocp46-wkmkvn-915b3b336cabec458a7c7ec2aa7c625f-0000.us-east.containers.appdomain.cloud/repository/maven-public"
 
         // DO NOT CHANGE THE GLOBAL VARS BELOW THIS LINE
         APP_NAME = "movies"
