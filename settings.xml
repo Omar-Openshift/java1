@@ -5,7 +5,7 @@
          <id>internal-repository</id>
          <name>Maven Repository Manager for classroom</name>
          <!-- // TODO: Change the url attribute to the nexus proxy server URL for your environment. -->
-         <url>https://nexus-cicd.dte-ocp46-zb9b4f-915b3b336cabec458a7c7ec2aa7c625f-0000.us-east.containers.appdomain.cloud/repository/maven-public</url>
+         <url>https://nexus-project-devops.dte-ocp46-wkmkvn-915b3b336cabec458a7c7ec2aa7c625f-0000.us-east.containers.appdomain.cloud/repository/maven-public</url>
          <mirrorOf>*</mirrorOf>
          </mirror>
        </mirrors>
